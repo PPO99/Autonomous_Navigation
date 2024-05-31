@@ -1,6 +1,6 @@
 # Autonomous Navigation
 
-Este repositorio contiene un nodo ROS2 desarrollado para la navegación autónoma de robots móviles dentro de un entorno conocido y mapeado previamente. El nodo implementa un pipeline que prueba diferentes técnicas de navegación global y local, extrayendo datos de navegación (éxito, tiempo empleado (s), distancia teórica proporcionada por el navegador global (m), distancia real recorrida por el robot (m)) para cada técnica.
+Este repositorio contiene un nodo ROS2 (Humble) desarrollado para la navegación autónoma de robots móviles dentro de un entorno conocido y mapeado previamente. El nodo implementa un pipeline que prueba diferentes técnicas de navegación global y local, extrayendo datos de navegación (éxito, tiempo empleado (s), distancia teórica proporcionada por el navegador global (m), distancia real recorrida por el robot (m)) para cada técnica.
 
 -	Bucle 1: Para cada técnica de navegación global:
    
@@ -21,7 +21,7 @@ Publicación de la Pose Inicial: Se publica la pose inicial del robot en el topi
 
 4. Selección de la Técnica de Navegación Reactiva: Se selecciona la técnica de navegación local o reactiva apropiada para cada iteración del bucle 2 (diferentes velocidades lineales (m/s) y angulares (rad/s).
 
-5. Teletransportación a una Nueva Pose Inicial: Se teletransporta al robot a una nueva pose inicial para iniciar el bucle 3.
+5. Teletransportación a una Nueva Pose Inicial: Se teletransporta al robot a una nueva pose inicial para iniciar el bucle 3. (Requiere de un plugin especial en el archivo .world para poder usar el servicio).
 
 6. Limpiar Mapa de Costos Global: Se limpia el mapa de costos global y se genera nuevamente desde la nueva pose inicial.
 
