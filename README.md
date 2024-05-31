@@ -2,15 +2,15 @@
 
 Este repositorio contiene un nodo ROS2 desarrollado para la navegación autónoma de robots móviles dentro de un entorno conocido y mapeado previamente. El nodo implementa un pipeline que prueba diferentes técnicas de navegación global y local, extrayendo datos de navegación (éxito, tiempo empleado (s), distancia teórica proporcionada por el navegador global (m), distancia real recorrida por el robot (m)) para cada técnica.
 
-->	Bucle 1: Para cada técnica de navegación global:
+-	Bucle 1: Para cada técnica de navegación global:
+-		
+ 	-	Bucle 2: Para cada técnica de navegación local:
 	
- 	->	Bucle 2: Para cada técnica de navegación local:
-	
-  		->	Bucle 3: - Lanzamiento simulaciones
+  		-	Bucle 3: - Lanzamiento simulaciones
 		
 	      			 - Guardar datos de navegación
 
--> 	Fin de los bucles: Mostrar medias de los resultados.
+- 	Fin de los bucles: Mostrar medias de los resultados.
 
 El pipeline del nodo consta de varios pasos:
 
